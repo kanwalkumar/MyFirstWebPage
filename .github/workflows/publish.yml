@@ -12,13 +12,13 @@ jobs:
       - name: Checkout Index.html
         uses: actions/checkout@v4
 
-      - name: Upload to build artifacts
-        uses: actions/upload-artifact@v4.3.3
-        with:
+      #- name: Upload to build artifacts
+      #  uses: actions/upload-artifact@v4.3.3
+      #  with:
         #SHA value of build hash
         # name: ${{ github.sha }}
-          name: upload index.html
-          path: index.html
+      #    name: upload index.html
+      #    path: index.html
 
       - name: Deploy to  Netlify
         run: |
